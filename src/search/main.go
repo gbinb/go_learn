@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 	"search/search"
+
+	_ "search/matchers"
 )
 
 func init() {
