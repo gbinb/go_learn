@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"pool"
+)
 
 func structSamp() {
 	user := User{
@@ -45,9 +48,17 @@ func main() {
 	//netSample()
 
 	//GenericTest()
-
 	//Protect()
 
 	//RuntimeTest()
-	RuntimeTest2()
+	//RuntimeTest2()
+
+	//mysync.AtomicTest()
+	//mysync.WorkTest()
+	//mysync.MutexTest()
+	//mysync.NoBufChannelTest()
+	//mysync.NoBufRunnerTest()
+	//mysync.BufTaskTest()
+	//runner.RunnerTest()
+	pool.PoolTest()
 }
