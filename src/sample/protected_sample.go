@@ -1,4 +1,4 @@
-package main
+package sample
 
 /*
 隐藏类型

@@ -1,4 +1,4 @@
-package main
+package sample
 
 import (
 	"fmt"
@@ -37,4 +37,30 @@ func ModifyRef(user *User, name string) {
 
 func Modify(user User, name string) {
 	user.Name = name
+}
+
+func StructSamp() {
+	user := User{
+		Name:  "张三",
+		Email: "san@126.com",
+		Age:   10,
+		Man:   false,
+	}
+	PrintUser(user)
+	Modify(user, "李四")
+	PrintUser(user)
+	ModifyRef(&user, "李四")
+	PrintUser(user)
+
+	tony := User{"tony", "tony@163.com", 20, true}
+	tony.notify()
+	tony.changeEmail("hello@163.com")
+	tony.notify()
+
+	fmt.Printf("\n")
+
+	poly := &User{"poly", "poly@163.com", 10, false}
+	poly.notify()
+	poly.changeEmail("poly@126.com")
+	poly.notify()
 }

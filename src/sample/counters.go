@@ -1,4 +1,4 @@
-package main
+package sample
 
 type alertCounter int
 
